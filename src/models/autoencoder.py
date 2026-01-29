@@ -3,10 +3,7 @@ import torch.nn as nn
 
 
 class Autoencoder(nn.Module):
-    """
-    Simple fully-connected autoencoder for image-like data.
-    Designed as a baseline model for anomaly detection.
-    """
+
 
     def __init__(self, bottleneck_dim=8):
         super().__init__()

@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def reconstruction_error_map(original, reconstructed):
-    """
-    Compute pixel-wise reconstruction error map.
-    """
+  
     return (original - reconstructed).pow(2).squeeze().cpu().numpy()
 
 
