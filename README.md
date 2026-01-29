@@ -33,14 +33,22 @@ The MNIST dataset is used as a **controlled benchmark** to study:
 ```text
 .
 ├── src/
+│   ├── __init__.py
+│
 │   ├── models/
 │   │   └── autoencoder.py        # Autoencoder architecture
-│   ├── utils/
-│   │   ├── corruptions.py        # Anomaly generation functions
-│   │   ├── metrics.py            # Evaluation metrics (ROC, AUC)
+│
+│   ├── datasets/
+│   │   └── mnist.py              # MNIST loading utilities
+│
+│   ├── evaluation/
+│   │   └── metrics.py            # Evaluation metrics (ROC, AUC)
+│
+│   ├── visualization/
 │   │   └── heatmaps.py           # Error heatmap & localization utilities
-│   └── datasets/
-│       └── mnist.py              # MNIST loading utilities
+│
+│   └── utils/
+│       └── corruptions.py        # Anomaly generation functions
 │
 ├── experiments/
 │   └── baseline_mnist.py         # End-to-end experiment script
@@ -57,6 +65,7 @@ The MNIST dataset is used as a **controlled benchmark** to study:
 │
 ├── requirements.txt
 └── README.md
+
 ```
 ---
 ## Methodology
